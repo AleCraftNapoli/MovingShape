@@ -7,7 +7,8 @@ let size = 50;
 console.log("To edit the shape, type in the console:", "'sh.ns = <shape>;'", "\nWhere <shape> is 'tr' (Triangle), 'sq' (Square), 're' (Rectangle) or 'ci' (Circle).");
 
 function setup() {
-  createCanvas(CSize, CSize);
+  cnv = createCanvas(CSize, CSize);
+  cnv.position(10, 40);
   spacing = document.getElementById('sp').value;
   if (spacing > CSize/2) {
 	alert("Spacing too big, resetted to 35"); 
